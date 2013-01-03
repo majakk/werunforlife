@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" 
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<TabHost android:id="@+id/edit_item_tab_host"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<TabWidget android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:id="@android:id/tabs"
+android:layout_gravity="bottom"/>
+
+<FrameLayout
+android:id="@android:id/tabcontent"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:paddingBottom="50px"> <!-- you need that if you don't want the tab content to overflow 65-->
+
+<LinearLayout
+    android:id="@+id/main_tab"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#333333"
+    android:orientation="vertical"
+    android:padding="5px" >
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:paddingBottom="5dp"
+		android:minHeight="32dp">
+		
+		<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:padding="0px">
+		
+		<ImageView 
+	   		android:id="@+id/image1"
+	   		android:src="@drawable/redheart"
+	   		android:layout_width="16dp"
+	   		android:layout_height="16dp"
+	   	/>
+	   	<TextView android:id="@+id/status1"
+			android:layout_width="64dp"
+			android:layout_height="16dp"
+			android:text="0"
+			android:textSize="16sp"
+			android:textStyle="normal"
+			android:paddingLeft="5dp"
+		/>
+		</LinearLayout>
+		<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:padding="0px">
+		<ImageView 
+	   		android:id="@+id/image2"
+	   		android:src="@drawable/greenheart"
+	   		android:layout_width="16dp"
+	   		android:layout_height="16dp"
+	   	/>
+	   	<TextView android:id="@+id/status2"
+			android:layout_width="64dp"
+			android:layout_height="16dp"
+			android:text="0"
+			android:textSize="16sp"
+			android:textStyle="normal"
+			android:paddingLeft="5dp"
+		/>
+		</LinearLayout>
+		<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:padding="0px">
+		<ImageView 
+	   		android:id="@+id/image3"
+	   		android:src="@drawable/blueheart"
+	   		android:layout_width="16dp"
+	   		android:layout_height="16dp"
+	   	/>
+	   	<TextView android:id="@+id/status3"
+			android:layout_width="64dp"
+			android:layout_height="16dp"
+			android:text="0"
+			android:textSize="16sp"
+			android:textStyle="normal"
+			android:paddingLeft="5dp"
+		/>
+		</LinearLayout>		
+	</LinearLayout>
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="2dip"
+		android:background="#888888">
+	</TableLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:paddingTop="64px"
+		android:layout_gravity="center">
+		<ImageView 
+	   		android:id="@+id/image4"
+	   		
+	   		android:layout_width="64px"
+	   		android:layout_height="64px"
+	   	/>
+	   	<TextView android:id="@+id/status4"
+			android:layout_width="64px"
+			android:layout_height="64px"
+			android:text=""
+			android:textSize="64sp"
+			android:textStyle="bold"
+			android:paddingLeft="10px"
+		/>
+	</LinearLayout>
+	<TextView android:id="@+id/status5"
+			android:layout_width="256px"
+			android:layout_height="64px"
+			android:text=""
+			android:textSize="32sp"
+			android:textStyle="normal"
+			android:paddingLeft="5px"
+			
+		/>
+</LinearLayout>
+
+<ScrollView android:id="@+id/ScrollView01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+<LinearLayout
+	android:id="@+id/quest_tab"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="5px">
+		<TextView android:id="@+id/textQuest"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="lieu"
+			android:textStyle="bold"
+		/>
+		<ImageView 
+		   		android:id="@+id/imageQuest"
+		   		android:layout_width="64px"
+		   		android:layout_height="64px"
+		   		android:layout_gravity="center"
+	   	/>
+</LinearLayout>
+</ScrollView>
+<LinearLayout
+	android:id="@+id/status_tab"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="5px">
+	<TextView 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="Current Session"
+    />
+    <TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="2dip"
+		android:background="#888888">
+	</TableLayout>
+	<TextView android:id="@+id/textInfo"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="Loading..."
+    />
+    <TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="2dip"
+		android:background="#888888">
+	</TableLayout>
+	<TextView 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="Grand Total"
+    />
+    <TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="2dip"
+		android:background="#888888">
+	</TableLayout>
+	<TextView android:id="@+id/textInfo2"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="Loading..."
+    />
+	
+</LinearLayout>
+</FrameLayout>
+
+</TabHost>
+</LinearLayout>

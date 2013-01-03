@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<numberofquests num="3"/>
+	<questtag id="@drawable/adilenna" namestr="Adilenna" redheart="20" greenheart="0" blueheart="0">
+    	<questtext>You walk down the steep stairs into an old laboratory to meet Ennil, the troubled biologist. He looks at you with worried eyes and says with a distressed voice: 
+    	- Our unknown creatures are in grave danger. I will explain along the way, but first we must hurry and collect hearts for the first one. Go out in the wild and move around your hood to scan the life-field with your device. Go and find 20 red hearts to save our Adilenna! 
+    	</questtext>   
+	</questtag>
+	<questtag id="@drawable/silef" namestr="Silef" redheart="0" greenheart="10" blueheart="0">
+		<questtext>- Great that you are back! I have another urgent creature for you to find. I believe our dear Silef might be the reason it all started. Perhaps we can figure out what happened if we find it. Silef never walks far so 10 green hearts should do it!
+    	</questtext>
+    </questtag>
+    <questtag id="@drawable/allirog" namestr="Allirog" redheart="0" greenheart="0" blueheart="3">
+		<questtext>It appears that these strange unknown creatures are using the life-field to stay hidden and that this handheld device can tap into it!
+		- Poor Silef... it was in a very bad shape. I patched it up so now we can only hope it recovers. I now suspect Silef was attacked by Allirog! You should be able to track it down by 5 blue hearts.
+    	</questtext>
+    </questtag>
+    <questtag id="@drawable/yellowheart" namestr=" ??" redheart="50" greenheart="20" blueheart="5">
+		<questtext>This is truly amazing, although we have no idea of what to expect next. Ennil says that they cannot reproduce since they have no gender. Each and everyone unknown creature is truly unique.
+		I wonder off out into the darkness trying to find something on my own. When I had 50 red, 20 green and 5 blue, something happend...
+    	</questtext>
+    </questtag>
+    <questtag id="@drawable/yellowheart" namestr="nothing" redheart="150" greenheart="40" blueheart="10">
+		<questtext>It is light. I'm trapped inside the life-field. I feel revitalized but something tells me I need to get out of here to help Ennil. Now I need 100 red, 30 green and 10 blue to escape this place...
+    	</questtext>
+    </questtag>
+    <questtag id="@drawable/atanodo" namestr="Atanodo" redheart="500" greenheart="100" blueheart="20">
+		<questtext>Oooops, what happened here? Im back in the world but things are not as they were before I got trapped in the life-field. I see a blurry disturbance in the air and starts to follow it. This will take some time and I need 500 red, 100 green and 20 blue hears to catch it.
+    	</questtext>
+    </questtag>
+</resources>
